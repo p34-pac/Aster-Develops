@@ -1,0 +1,33 @@
+.projects {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    min-width: 80%;
+    max-width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+.projects h1{
+    color: #1f1f1f;
+    margin: 30px 0;
+
+}
+.projects .proj_cont {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+}
+.projects .nav_btn {
+    margin: 10px auto;
+    zoom: 80%;
+}

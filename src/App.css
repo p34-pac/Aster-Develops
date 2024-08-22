@@ -1,0 +1,182 @@
+#root {
+  max-width: calc(100vw - 300px);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  background-color: #f9f9f9;
+  margin-left: -8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  position: absolute;
+  right: 0;
+}
+#root > main {
+  width: calc(100%);
+  max-width: calc(100vw - 300px);
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  max-height: 100vh;
+  margin: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+#root > main .coverImg{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: black;
+
+}
+#root > main .coverImg img{
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+  filter: opacity(20%);
+}
+
+*::-webkit-scrollbar{
+  display: none;
+  background-color: black;
+  
+}
+.mainContent{
+  width: fit-content;
+  max-width: 100%;
+  min-width: calc(100% + 2px);
+  height: fit-content;
+  position: relative;
+}
+.mainContent .compoCont{
+  width: 100%;
+  height: fit-content;
+  overflow: scroll;
+  background-color: #f9f9f9;
+
+}
+
+.inputPassword{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.935);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+
+  --pr: rgb(255, 255, 255);
+  --sr: white;
+  --sr2: rgb(255, 255, 255);
+}
+
+
+
+.inputPassword .input {
+  display: flex;
+  gap: 10px;
+}
+
+.inputPassword .input input {
+  width: calc(300px - 30px);
+  max-width: calc(80vw - 30px);
+  background-color: var(--pr);
+  outline: none;
+  border: 1px solid var(--sr2);
+  padding: 10px;
+  font-size: var(--h4);
+  border-radius: 10px;
+  color: black;
+
+}
+
+.inputPassword .input input:focus {
+  border: 2px solid var(--sr2);
+  transition-duration: 200ms;
+}
+
+.inputPassword .input button {
+  background-color: var(--pr);
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: 1px solid var(--sr2);
+  transition-duration: 200ms;
+  cursor: pointer;
+}
+
+.inputPassword .input button.show {
+  background-color: var(--sr2);
+  transition-duration: 200ms;
+}
+
+.inputPassword .enter {
+  min-width: 50%;
+  background-color: var(--pr);
+  border: 1px solid var(--sr2);
+  color: var(--sr2);
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: var(--h5);
+}
+
+.inputPassword .enter:active {
+  transform: scale(0.95);
+  transition-duration: 200ms;
+  border: 2px solid var(--sr2);
+  background-color: var(--pr);
+}
+
+.inputPassword .error{
+  color: #dd2121fb;
+}
+.inputPassword .success{
+  color: #21dd76fb;
+}
+.inputPassword .buttons{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.inputPassword .buttons button{
+  background-color: var(--pr);
+  color: black;
+}
+
+
+
+@media screen and (max-width: 450px) {
+  #root > main {
+    width: 100% !important;
+    max-width: 100vw !important;
+  }
+
+}
+@media screen and (min-height: 740px) and (max-width: 450px)  {
+  .mainContent .compoCont{
+    width: 100%;
+    height: fit-content;
+    overflow: scroll;
+    background-color: #f9f9f9;
+  
+  }
+}
+

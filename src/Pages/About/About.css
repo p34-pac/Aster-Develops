@@ -1,0 +1,12 @@
+.about .write-up {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    color: black;
+}
+.about .write-up :not(:first-child){
+    margin-top: 20px;
+}
+.about .write-up h1{
+    font-size: 25px;
+}

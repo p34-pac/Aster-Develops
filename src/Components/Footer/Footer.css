@@ -1,0 +1,188 @@
+footer.footer {
+    width: 100%;
+    height: fit-content;
+    padding: 20px 0;
+    background-color: #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+            overflow-x: hidden;
+
+}
+footer.footer > nav {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-left: 5%;
+}
+footer.footer > nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 10px;
+}
+footer.footer > nav > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+footer.footer .reference {
+    width: 55%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 5%;
+    padding-right: 5px;
+}
+footer.footer .reference .ic-RP{
+    width: 50px;
+    height: 50px;
+}
+footer.footer .reference .ic-RP svg{
+    width: 100%;
+    height: 100%;
+}
+footer.footer .reference .ref_cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+footer.footer .reference .ref_cont > a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 10px;
+}
+footer.footer .reference .ref_cont > a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+@media screen and (max-width: 1000px) {
+    footer.max {
+        width: 100%;
+        height: fit-content;
+        background-color: #000;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        overflow: hidden;
+   }
+   footer.footer .reference {
+    margin-top: 40px;
+    gap: 20px;
+}
+}
+@media screen and (max-width: 800px) {
+    footer.footer {
+        width: 100%;
+        height: fit-content;
+        background-color: #000;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        overflow: hidden;
+   }
+    footer.footer > nav {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin-left: 0%;
+        margin-bottom: 20px;
+   }
+    footer.footer > nav > a {
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+        font-weight: bolder;
+        padding: 10px;
+   }
+    footer.footer > nav > a:hover {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+   }
+    footer.footer .reference {
+        width: 90%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
+                margin: auto;
+        padding-left: 0%;
+        margin-top: 40px;
+        gap: 20px;
+   }
+    footer.footer .reference .ref_cont {
+        margin-left: 10px;
+   }
+    footer.footer .reference .ref_cont > a {
+        text-decoration: none;
+        color: white;
+        font-size: larger;
+        font-weight: bolder;
+        padding: 10px;
+   }
+    footer.footer .reference .ref_cont > a:hover {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+   }
+}
+
+@media screen and (max-width: 450px) {
+    footer.footer .reference {
+        flex-direction: column-reverse;
+        
+    }
+    footer.footer .reference .ref_cont > a {
+        font-size: 5dvw;
+        
+   }
+}

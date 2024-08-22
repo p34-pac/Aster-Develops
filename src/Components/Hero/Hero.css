@@ -1,0 +1,69 @@
+ .hero {
+    width: 100%;
+    height: calc(100vh - 70px);
+    /* background-color: #000; */
+
+    margin-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+}
+
+ .hero > .hero_cont {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+ .hero > .hero_cont > h1 {
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    font-weight: bolder;
+}
+ .hero > .hero_cont > b {
+    color: white;
+    font-size: 25px;
+    font-weight: normal;
+}
+.hero > .hero_cont .cta{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 30px auto;
+    background-color: rgba(240, 248, 255, 0.722);
+    border-radius: 10px;
+
+}
+.hero > .hero_cont .cta *{
+    background-color: rgba(240, 248, 255, 0);
+    font-size: clamp(10px, 1rem, 20px) !important;
+    color: #000000bb;
+    fill: #000000bb;
+}
+
+@media screen and (max-width: 500px) {
+    .hero > .hero_cont > h1 {
+        font-size: 10dvw;
+        text-align: center;
+    }
+    .hero > .hero_cont > b {
+        text-align: center;
+        font-size: 5dvw;
+    }
+}

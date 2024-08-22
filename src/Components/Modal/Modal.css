@@ -1,0 +1,66 @@
+.Modal{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    cursor: default;
+    
+}
+.Modal .modalBox{
+    width: fit-content;
+    min-width: 200px;
+    height: fit-content;
+    max-width: 90vw;
+    max-height: 90vh;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.Modal .modalBox .header{
+    width: calc(100% - 20px);
+    padding: 0 10px;
+    height: 40px;
+    background-color: rgb(21, 21, 21);
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.Modal .modalBox .header #remove{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: -10px;
+}
+.Modal .modalBox .header #remove:hover{
+    background-color: rgba(255, 0, 0, 0.742);
+}
+.Modal .modalBox .header #remove svg{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+}
+
+.Modal .modalBox .content {
+    width: calc(100% - 20px);
+    margin: auto;
+    padding: 10px;
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+}

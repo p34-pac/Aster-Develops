@@ -1,0 +1,50 @@
+
+.nav_btn {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
+    
+}
+.nav_btn > a > button {
+    padding: 10px 20px;
+    padding-right: 40px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border: none;
+    outline: none;
+    color: #d9d9d9;
+    background-color: #1f1f1f;
+    cursor: pointer;
+
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+}
+.nav_btn > a > button svg path{
+    fill: #d9d9d9;
+}
+.nav_btn:hover > a > button svg {
+    transform: translateX(10px);
+    transition-duration: 500ms;
+}
+.nav_btn > a > button:active {
+    -webkit-transform: scale(0.985);
+        -ms-transform: scale(0.985);
+            transform: scale(0.985);
+}
