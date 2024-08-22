@@ -45,7 +45,7 @@ function Skill({skill}){
                 <ul className="skillDescription">
                     {skill.others&&typeof(skill.others)=="object"?
                         skill.others.map((item, index)=><li key={index}>{item}</li>)
-                    :<li>Something</li>}
+                    :<li>{skill.duration}</li>}
                 </ul>
                 :null
             }
