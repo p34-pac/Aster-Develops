@@ -22,7 +22,7 @@ function Contact() {
     
     const subject = encodeURIComponent(`Request for Services: ${name} - Potential Client Inquiry`);
     const body = encodeURIComponent(`
-        Dear [Your Name],
+        Dear Paul,
         
         I hope this message finds you well.
         
